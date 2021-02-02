@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  api-cn:
+    image: openjdk:8u222
+    ports:
+    - "18087:8087"
+    volumes:
+    - /data/apps/api/springlog:/var/www/iot/logs
+    - /data/apps/api/accesslog:/var/log/iot
+    - /data/jenkins-data/workspace/api-cn/api/target/api-1.0.1-exec.jar:/api-1.0.1-exec.jar
+    command: java -jar /api-1.0.1-exec.jar
+    networks:
+      v1test:
+        ipv4_address: 10.10.10.16
+networks:
+  v1test:
+    external: true
+    name: v1test

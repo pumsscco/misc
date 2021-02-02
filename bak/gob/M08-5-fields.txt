@@ -1,0 +1,100 @@
+2 gamedata\PALWorld\M08\5\ B
+PAL4-GameObject
+PAL4-GameObject-object-id
+PAL4-GameObject-Parameters
+
+effect001 gamedata\PALObject\ZZA\ ZZA ZZA1
+PAL4-GameObject
+PAL4-GameObject-object-auto-disappear
+PAL4-GameObject-object-camera-collide
+PAL4-GameObject-object-clip
+PAL4-GameObject-object-hide
+PAL4-GameObject-object-hint
+PAL4-GameObject-object-marker
+PAL4-GameObject-object-research-num
+PAL4-GameObject-object-store
+PAL4-GameObject-object-validfor
+PAL4_GameObject-object-height-limit
+PAL4-GameObject-Parameters
+PAL4_GameObject-effect
+PAL4_GameObject-effect-distance-clip
+PAL4_GameObject-effect-name H_125
+PAL4_GameObject-effect-saver
+PAL4_GameObject-effect-times
+
+effect002 gamedata\PALObject\ZZA\ ZZA ZZA1
+PAL4-GameObject
+PAL4-GameObject-object-auto-disappear
+PAL4-GameObject-object-camera-collide
+PAL4-GameObject-object-clip
+PAL4-GameObject-object-hide
+PAL4-GameObject-object-marker
+PAL4-GameObject-object-research-num
+PAL4-GameObject-object-scale
+PAL4-GameObject-object-store
+PAL4-GameObject-object-validfor
+PAL4_GameObject-object-height-limit
+PAL4-GameObject-Parameters
+PAL4_GameObject-effect
+PAL4_GameObject-effect-name H_076 
+PAL4_GameObject-effect-saver
+PAL4_GameObject-effect-times
+
+effect003 gamedata\PALObject\ZZA\ ZZA ZZA1
+PAL4-GameObject
+PAL4-GameObject-object-auto-disappear
+PAL4-GameObject-object-camera-collide
+PAL4-GameObject-object-clip
+PAL4-GameObject-object-hide
+PAL4-GameObject-object-hint
+PAL4-GameObject-object-marker
+PAL4-GameObject-object-research-num
+PAL4-GameObject-object-store
+PAL4-GameObject-object-validfor
+PAL4_GameObject-object-height-limit
+PAL4-GameObject-Parameters
+PAL4_GameObject-effect
+PAL4_GameObject-effect-distance-clip
+PAL4_GameObject-effect-name H_125
+PAL4_GameObject-effect-saver
+PAL4_GameObject-effect-times
+
+effect004 gamedata\PALObject\ZZA\ ZZA ZZA1
+PAL4-GameObject
+PAL4-GameObject-object-auto-disappear
+PAL4-GameObject-object-camera-collide
+PAL4-GameObject-object-clip
+PAL4-GameObject-object-hide
+PAL4-GameObject-object-hint
+PAL4-GameObject-object-marker
+PAL4-GameObject-object-research-num
+PAL4-GameObject-object-scale
+PAL4-GameObject-object-store
+PAL4-GameObject-object-validfor
+PAL4_GameObject-object-height-limit
+PAL4-GameObject-Parameters
+PAL4_GameObject-effect
+PAL4_GameObject-effect-distance-clip
+PAL4_GameObject-effect-name H_036
+PAL4_GameObject-effect-saver
+PAL4_GameObject-effect-times
+
+save1 gamedata\PALObject\H_065\ H_065 H_065.1
+PAL4-GameObject
+PAL4-GameObject-object-auto-disappear
+PAL4-GameObject-object-camera-collide
+PAL4-GameObject-object-clip
+PAL4-GameObject-object-hide
+PAL4-GameObject-object-hint
+PAL4-GameObject-object-marker
+PAL4-GameObject-object-research-num
+PAL4-GameObject-object-scale
+PAL4-GameObject-object-store
+PAL4-GameObject-object-validfor
+PAL4_GameObject-object-height-limit
+PAL4-GameObject-Parameters
+PAL4_GameObject-effect
+PAL4_GameObject-effect-distance-clip
+PAL4_GameObject-effect-name H_065
+PAL4_GameObject-effect-saver
+PAL4_GameObject-effect-times

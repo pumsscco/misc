@@ -1,0 +1,64 @@
+m08-04-01 516 
+MSTINFO_Behavior 
+MSTINFO_BufferCache
+AAB_MST_ESSBEH_combat_pos_0
+AAB_MST_ESSBEH_combat_pos_1
+AAB_MST_ESSBEH_combat_pos_2
+AAB_MST_ESSBEH_combat_pos_3
+AAB_MST_ESSBEH_max_pursuit_speed
+AAB_MST_ESSBEH_script_func
+
+m08-05-01 516
+MSTINFO_Behavior
+MSTINFO_BufferCache
+AAB_MST_ESSBEH_combat_pos_0
+AAB_MST_ESSBEH_combat_pos_1
+AAB_MST_ESSBEH_combat_pos_2
+AAB_MST_ESSBEH_combat_pos_3
+AAB_MST_ESSBEH_combat_pos_4
+AAB_MST_ESSBEH_max_pursuit_speed
+AAB_MST_ESSBEH_script_func        
+
+m08-05-02 516
+MSTINFO_Behavior
+MSTINFO_BufferCache
+AAB_MST_ESSBEH_combat_pos_0
+AAB_MST_ESSBEH_combat_pos_1
+AAB_MST_ESSBEH_combat_pos_2
+AAB_MST_ESSBEH_combat_pos_3
+AAB_MST_ESSBEH_combat_pos_4
+AAB_MST_ESSBEH_max_pursuit_speed
+AAB_MST_ESSBEH_script_func        
+
+m08-05-03 516
+MSTINFO_Behavior
+MSTINFO_BufferCache
+AAB_MST_ESSBEH_combat_pos_0
+AAB_MST_ESSBEH_combat_pos_1
+AAB_MST_ESSBEH_combat_pos_2
+AAB_MST_ESSBEH_combat_pos_3
+AAB_MST_ESSBEH_combat_pos_4
+AAB_MST_ESSBEH_max_pursuit_speed
+AAB_MST_ESSBEH_script_func PAL4_MST_NEED_STORAGE
+
+m08-05-04 516 
+MSTINFO_Behavior
+MSTINFO_BufferCache
+AAB_MST_ESSBEH_combat_pos_0
+AAB_MST_ESSBEH_combat_pos_1
+AAB_MST_ESSBEH_combat_pos_2
+AAB_MST_ESSBEH_combat_pos_3
+AAB_MST_ESSBEH_combat_pos_4
+AAB_MST_ESSBEH_max_pursuit_speed
+AAB_MST_ESSBEH_script_func        
+
+m08-05-05 516
+MSTINFO_Behavior 
+MSTINFO_BufferCache
+AAB_MST_ESSBEH_combat_pos_0
+AAB_MST_ESSBEH_combat_pos_1
+AAB_MST_ESSBEH_combat_pos_2
+AAB_MST_ESSBEH_combat_pos_3
+AAB_MST_ESSBEH_combat_pos_4
+AAB_MST_ESSBEH_max_pursuit_speed
+AAB_MST_ESSBEH_script_func

@@ -1,0 +1,61 @@
+m06-02-05 422 
+MSTINFO_Behavior 
+MSTINFO_Behavior_Group 
+MSTINFO_Behavior_GroupCondition 
+MSTINFO_Behavior_GroupMode 
+MSTINFO_Behavior_GroupName m06-02-05 
+MSTINFO_Behavior_GroupPathWayID m06-04-01   
+MSTINFO_Behavior_Object 
+MSTINFO_Behavior_ObjectExpectTime 
+MSTINFO_Behavior_ObjectProportion 
+MSTINFO_Behavior_ObjectType 
+MSTINFO_Behavior_ObjectWaitMode 
+MSTINFO_Behavior_ObjectWaitTime 
+AAB_MST_parameters   
+AABPedestrian_MST_run_max_force 
+AABPedestrian_MST_run_max_speed 
+AABPedestrian_MST_walk_pathfollow 
+MSTINFO_BufferCache 
+AAB_MST_ESSBEH_combat_pos_0 
+AAB_MST_ESSBEH_combat_pos_1 
+AAB_MST_ESSBEH_combat_pos_2    
+AAB_MST_ESSBEH_combat_pos_3 
+AAB_MST_ESSBEH_combat_pos_4 
+AAB_MST_ESSBEH_max_pursuit_speed 
+AAB_MST_ESSBEH_script_func        
+
+m06-02-07 421 
+MSTINFO_Behavior 
+MSTINFO_Behavior_Group 
+MSTINFO_Behavior_GroupCondition 
+MSTINFO_Behavior_GroupMode 
+MSTINFO_Behavior_GroupName m06-02-07 
+MSTINFO_Behavior_GroupPathWayID m06-04-03   
+MSTINFO_Behavior_Object 
+MSTINFO_Behavior_ObjectExpectTime 
+MSTINFO_Behavior_ObjectProportion 
+MSTINFO_Behavior_ObjectType 
+MSTINFO_Behavior_ObjectWaitMode 
+MSTINFO_Behavior_ObjectWaitTime 
+AAB_MST_parameters    
+AABPedestrian_MST_run_max_force 
+AABPedestrian_MST_run_max_speed 
+AABPedestrian_MST_walk_pathfollow 
+MSTINFO_BufferCache 
+AAB_MST_ESSBEH_combat_pos_0 
+AAB_MST_ESSBEH_combat_pos_1 
+AAB_MST_ESSBEH_combat_pos_2 
+AAB_MST_ESSBEH_combat_pos_3    
+AAB_MST_ESSBEH_combat_pos_4 
+AAB_MST_ESSBEH_combat_pos_5 
+AAB_MST_ESSBEH_max_pursuit_speed 
+AAB_MST_ESSBEH_script_func        
+
+m06-05-02 423 
+MSTINFO_Behavior 
+MSTINFO_BufferCache 
+AAB_MST_ESSBEH_combat_pos_0 
+AAB_MST_ESSBEH_combat_pos_1 
+AAB_MST_ESSBEH_combat_pos_2 
+AAB_MST_ESSBEH_max_pursuit_speed   
+AAB_MST_ESSBEH_script_func        

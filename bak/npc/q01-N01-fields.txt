@@ -1,0 +1,5 @@
+MN001 201J
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct J01

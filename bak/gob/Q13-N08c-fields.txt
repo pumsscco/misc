@@ -1,0 +1,15 @@
+item001 gamedata\PALObject\DH22\ DH22 DH22
+PAL4-GameObject i i
+PAL4-GameObject-object-auto-disappear i i
+PAL4-GameObject-object-camera-collide i i
+PAL4-GameObject-object-clip i i
+PAL4-GameObject-object-marker i i
+PAL4-GameObject-object-research-num i i
+PAL4-GameObject-object-scale f i
+PAL4-GameObject-object-store i i
+PAL4_GameObject-object-height-limit i i
+PAL4-GameObject-Parameters i i
+PAL4_GameObject-getItem i i
+PAL4_GameObject-getItem-EquipID i i
+PAL4_GameObject-getItem-PropID i i
+PAL4_GameObject-getItem-num i i

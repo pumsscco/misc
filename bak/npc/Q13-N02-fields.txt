@@ -1,0 +1,17 @@
+46 309 func5005
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct C01
+
+47 309 func5002
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct C01
+
+5007 271 func5007
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct C01

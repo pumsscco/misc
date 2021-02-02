@@ -1,0 +1,53 @@
+101 101
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct C01
+
+103 103
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct C01 
+
+105 105
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct C01
+
+4001 329 func4001
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct C01
+
+4002 429 func4002
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct Z01
+
+4003 475 func4003
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct Z01
+
+4004 328 func4004
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct C01
+
+MN001 227
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct C01
+
+MN002 228
+NPCINFO_Behavior
+NPCINFO_BufferCache
+NPCINFO_BufferCache_Attr
+NPCINFO_BufferCache_Attr_defaultAct C01

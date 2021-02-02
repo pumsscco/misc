@@ -1,0 +1,49 @@
+version: "3.8"
+services:
+  mysql:
+    image: mysql:5.7
+    ports:
+    - "3306"
+    env_file:
+    - secrets.env
+    volumes:
+    - mysql-data:/var/lib/mysql
+    networks:
+      v1test:
+        ipv4_address: 10.30.50.70
+  redis:
+    image: redis:6.0
+    ports:
+    - "6379"
+    env_file:
+    - secrets.env
+    volumes:
+    - redis-dump:/var/lib/mysql
+    networks:
+      v1test:
+        ipv4_address: 10.30.50.71
+  attendance:
+    image: golang:1.13
+    ports:
+    - "55758:8080"
+    volumes:
+    - apps:/go/src/app
+    working_dir: /go/src/app
+    command: ["./attendance"]
+    networks:
+      v1test:
+        ipv4_address: 10.30.50.78
+    depends_on:
+    - redis
+    - mysql
+networks:
+  v1test:
+    ipam:
+      driver: default
+      config:
+      - subnet: "10.30.50.0/24"
+        gateway: 10.30.50.1
+volumes:
+  mysql-data: /data/mysql
+  redis-dump: /data/redis
+  app: /home/pluto/git-base-02/attendance

@@ -1,0 +1,26 @@
+drop table if exists `mstteam`;
+CREATE TABLE `mstteam` (
+ `id` smallint(3) unsigned NOT NULL COMMENT '编号',
+ `shop_script` smallint(4) unsigned NOT NULL COMMENT '商店脚本',
+ `begin_script` smallint(5) unsigned NOT NULL COMMENT '开始脚本',
+ `end_script` smallint(5) unsigned NOT NULL COMMENT '结束脚本',
+ `fail_script` smallint(4) unsigned NOT NULL COMMENT '失败脚本',
+ `title_script` smallint(5) unsigned NOT NULL COMMENT '称号脚本',
+ `esc_rate` tinyint(3) unsigned NOT NULL COMMENT '逃跑成功率',
+ `mst1` smallint(5) unsigned NOT NULL COMMENT '怪物1',
+ `mst2` smallint(5) unsigned NOT NULL COMMENT '怪物2',
+ `mst3` smallint(5) unsigned NOT NULL COMMENT '怪物3',
+ `mst4` smallint(5) unsigned NOT NULL COMMENT '怪物4',
+ `mst5` smallint(5) unsigned NOT NULL COMMENT '怪物5',
+ `loc1` tinyint(1) unsigned NOT NULL COMMENT '位置1',
+ `loc2` tinyint(1) unsigned NOT NULL COMMENT '位置2',
+ `loc3` tinyint(1) unsigned NOT NULL COMMENT '位置3',
+ `loc4` tinyint(1) unsigned NOT NULL COMMENT '位置4',
+ `loc5` tinyint(1) unsigned NOT NULL COMMENT '位置5',
+ `rot_angle` tinyint(1) unsigned NOT NULL COMMENT '旋转角度',
+ `challenge` tinyint(1) unsigned NOT NULL COMMENT '挑战',
+ `compose` varchar(16) NOT NULL COMMENT '组成',
+ `wander` tinyint(1) NOT NULL COMMENT '游荡模型',
+ `comment` varchar(16) NOT NULL COMMENT '备注',
+ `field1` varchar(8) NOT NULL COMMENT 'field1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='怪物组队表'
