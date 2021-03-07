@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<meta charset='utf-8'>
+
+<p>排序标准：{{ type }}<br />排序方式：{{ sort }}</p>
+{% if object_list %}
+	<table border cellspacing=1 cellpadding=3>
+	  <caption>清仓股票收益排行榜</caption>
+	  <tr>
+	    <th>股票代码</th>
+	    <th>股票名称</th>
+	    <th>首次交易日期</th>
+	    <th>最后交易日期</th>
+	    <th>持股天数</th>
+	    <th>净利润</th>
+        	    <th>日均利润</th>
+	  </tr>
+	{% for deal in object_list %}
+	  <tr>
+	    <td>{{ deal.stock_code }}</td>
+	    <td>{{ deal.stock_name }}</td>
+	    <td>{{ deal.first_deal_day }}</td>
+	    <td>{{ deal.last_deal_day }}</td>
+                 <td>{{ deal.hold_days }}</td>
+	    <td>{{ deal.profit }}</td>
+	    <td>{{ deal.avg_daily_profit }}</td>
+	  </tr>
+	{% endfor %}
+	</table>
+{% else %}
+    <p>没有符合条件的交易记录</p>
+{% endif %}

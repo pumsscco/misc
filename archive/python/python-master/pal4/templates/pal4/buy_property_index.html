@@ -1,0 +1,32 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'stock/style.css' %}" />
+<meta charset="UTF-8">
+<head><title>道具基本属性及购买场景查询</title>
+</head>
+<h3 align=center>道具基本属性及购买场景查询</h3>
+<body>
+综述：部分道具可通过购买及场景拾取获得，其余则为怪物掉落及偷窃得到<br /><br />
+恢复类
+<ul>
+	<li><a href="{% url 'pal4:buy_property' 'dh' %}">一般恢复类</a></li>
+	<li><a href="{% url 'pal4:buy_property' 'sw' %}">食物</a></li>
+</ul>
+<p>-----------------------------------</p>
+攻击类
+<ul>
+	<li><a href="{% url 'pal4:buy_property' 'dg' %}">攻击物品</a></li>
+</ul>
+<p>-----------------------------------</p>
+辅助类
+<ul>
+	<li><a href="{% url 'pal4:buy_property' 'df' %}">一般辅助类</a></li>
+    <li><a href="{% url 'pal4:buy_property' 'cx' %}">香料</a></li>
+</ul>
+<p>-----------------------------------</p>
+材料类
+<ul>
+	<li><a href="{% url 'pal4:buy_property' 'ck' %}">矿石</a></li>
+    <li><a href="{% url 'pal4:buy_property' 'cq' %}">其它杂货材料</a></li>
+</ul>
+</body>

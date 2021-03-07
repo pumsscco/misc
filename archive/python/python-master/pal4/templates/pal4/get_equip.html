@@ -1,0 +1,114 @@
+{% load staticfiles %}
+<meta charset='utf-8'>
+<link rel="stylesheet" type="text/css" href="{% static 'pal4/style.css' %}" />
+
+{% if eq %}
+	<table border cellspacing=1 cellpadding=3>
+	  <caption>装备基本信息</caption>
+	  <tr>
+	    <th>装备ID</th>
+	    <th>装备名称</th>
+	    <th>装备类型</th>
+	    <th>装备价格</th>
+	  </tr>
+	  <tr>
+	    <td>{{ eq.id }}</td>
+	    <td>{{ eq.ea_name }}</td>
+	    <td>{{ eq.type_name }}</td>
+	    <td>{{ eq.ea_price }}</td>
+	  </tr>
+	</table>
+    {% if shops %}
+        <table border cellspacing=1 cellpadding=3>
+          <caption>店铺购买途径详情</caption>
+          <tr>
+            <th>店铺所在户外区域</th>
+            <th>店铺类型</th>
+            <th>店铺名称</th>
+            <th>所需完成的任务名称</th>
+          </tr>
+        {% for shop in shops %}
+          <tr>
+            <td>{{ shop.container }}</td>
+            <td>{{ shop.type_name }}</td>
+            <td>{{ shop.shop_name }}</td>
+            <td>{{ shop.quest_name }}</td>
+          </tr>
+        {% endfor %}
+        </table>
+    {% elif pres %}
+        <p>虽然无法从店铺直接购买获得，但可通过图谱熔铸得到，以下是相应图谱的基本信息</p>
+        <table border cellspacing=1 cellpadding=3>
+          <caption>熔铸图谱基本信息</caption>
+          <tr>
+            <th>配方ID</th>
+            <th>配方名称</th>
+            <th>配方类型</th>
+            <th>配方说明</th>
+            <th>配方价格</th>
+          </tr>
+          <tr>
+            <td>{{ pres.id }}</td>
+            <td>{{ pres.pra_name }}</td>
+            <td>{{ pres.type_name }}</td>
+            <td>{{ pres.pra_description }}</td>
+            <td>{{ pres.pra_price }}</td>
+          </tr>
+        </table>
+        <table border cellspacing=1 cellpadding=3>
+          <caption>图谱购买途径</caption>
+          <tr>
+            <th>店铺所在户外区域</th>
+            <th>店铺类型</th>
+            <th>店铺名称</th>
+            <th>所需完成的任务名称</th>
+          </tr>
+        {% for pres_shop in pres_shops %}
+          <tr>
+            <td>{{ pres_shop.container }}</td>
+            <td>{{ pres_shop.type_name }}</td>
+            <td>{{ pres_shop.shop_name }}</td>
+            <td>{{ pres_shop.quest_name }}</td>
+          </tr>
+        {% endfor %}
+        </table>
+    {% else %}
+        <p>无法从店铺直接购得，也无法通过熔铸得到该装备</p>
+    {% endif %}
+
+
+    {% if picks %}
+        <table border cellspacing=1 cellpadding=3>
+          <caption>场景内拾取该装备的信息</caption>
+          <tr>
+            <th>场景名称</th>
+            <th>物品编号</th>
+            <th>模型路径</th>
+            <th>模型编号</th>
+            <th>贴图编号</th>
+            <th>位置坐标X</th>
+            <th>位置坐标Y</th>
+            <th>位置坐标Z</th>
+          </tr>
+        {% for pick in picks %}
+          <tr>
+            <td>{{ pick.section_name }}</td>
+            <td>{{ pick.si_id }}</td>
+            <td>{{ pick.si_model_path }}</td>
+            <td>{{ pick.si_model }}</td>
+            <td>{{ pick.si_texture }}</td>
+            <td>{{ pick.si_coor_x }}</td>
+            <td>{{ pick.si_coor_y }}</td>
+            <td>{{ pick.si_coor_z }}</td>
+          </tr>
+        {% endfor %}
+        </table>
+    {% else %}
+        <p>无法从任何场景中拾取该装备</p>
+    {% endif %}
+
+{% else %}
+    <p>装备不存在</p>
+{% endif %}
+
+

@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<meta charset='utf-8'>
+<link rel="stylesheet" type="text/css" href="{% static 'pal4/style.css' %}" />
+<table border cellspacing=1 cellpadding=3>
+    <caption>配方基本信息及购买查询-----主分类：{{ pre_type }}，子类：{{ sub_type }}</caption>
+<tr>
+  <th>ID</th>
+  <th>名称</th>
+  <th>配方说明</th>
+  <th>配方属性说明</th>
+  <th>潜力需求量</th>
+  <th>灵容量需求量</th>
+  <th>价格</th>
+  <th>可购买场景</th>
+</tr>
+{% for prescription in object_list %}
+<tr>
+  <td>{{ prescription.id }}</td>
+  <td>{{ prescription.pra_name }}</td>
+  <td>{{ prescription.pra_description }}</td>
+  {% if prescription.pra_property %}
+      <td>{{ prescription.pra_property }}</td>
+  {% else %}
+      <td><a href="{% url 'pal4:buy_equip'  eq_url_key  %}">请查询{{ sub_type }}</a></td>
+  {% endif %}
+  {% if prescription.pra_need_potential %}
+      <td>{{ prescription.pra_need_potential }}</td>
+  {% else %}
+      <td>---</td>
+  {% endif %}
+  {% if prescription.pra_need_magic %}
+      <td>{{ prescription.pra_need_magic }}</td>
+  {% else %}
+      <td>---</td>
+  {% endif %}
+  <td>{{ prescription.pra_price }}</td>
+  <td>{{ prescription.shopscene }}</td>
+</tr>
+{% endfor %}
+</table>
+    
+
+

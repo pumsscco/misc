@@ -1,0 +1,26 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'stock/style.css' %}" />
+<meta charset="UTF-8">
+<head><title>装备基本信息及购买场景查询</title>
+</head>
+<h3 align=center>装备基本信息及购买场景查询</h3>
+<body>
+综述：部分装备只能通过购买及场景拾取获得，剩余高级装备需购买图谱来铸造<br /><br />
+武器类
+<ul>
+	<li><a href="{% url 'pal4:buy_sword' %}">剑</a></li>
+	<li><a href="{% url 'pal4:buy_dsword' %}">双剑</a></li>
+	<li><a href="{% url 'pal4:buy_instrument' %}">琴</a></li>
+</ul>
+防具类
+<ul>
+    <li><a href="{% url 'pal4:buy_helmet' %}">头部防具</a></li>
+    <li><a href="{% url 'pal4:buy_corselet' %}">身体防具</a></li>
+    <li><a href="{% url 'pal4:buy_legharness' %}">足部防具</a></li>
+</ul>
+饰品
+<ul>
+	<li><a href="{% url 'pal4:buy_ornament' %}">佩戴</a></li>
+</ul>
+</body>

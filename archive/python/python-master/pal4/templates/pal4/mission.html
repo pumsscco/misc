@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<meta charset='utf-8'>
+<link rel="stylesheet" type="text/css" href="{% static 'pal4/style.css' %}" />
+<table border cellspacing=1 cellpadding=3>
+<caption>全任务列表</caption>
+<tr>
+  <th>任务变量</th>
+  <th>任务类型</th>
+  <th>任务编号</th>
+  <th>任务名称</th>
+  <th>任务说明</th>
+  <th>剧情完成度</th>
+  <th>任务变灰</th>
+</tr>
+{% for mission in object_list %}
+<tr style="color: {{ mission.color }}">
+  <td>{{ mission.trunk }}</td>
+  <td>{{ mission.type }}</td>
+  <td>{{ mission.quest_id }}</td>
+  <td>{{ mission.name }}</td>
+  <td>{{ mission.description }}</td>
+  <td>{{ mission.story_percent }}</td>
+  <td>{{ mission.is_gray }}</td>
+</tr>
+{% endfor %}
+</table>
+    
+
+

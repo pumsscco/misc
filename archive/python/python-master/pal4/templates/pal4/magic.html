@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<meta charset='utf-8'>
+<link rel="stylesheet" type="text/css" href="{% static 'pal4/style.css' %}" />
+<table border cellspacing=1 cellpadding=3>
+<caption>五灵仙术一览</caption>
+<tr>
+  <th>仙术ID</th>
+  <th>仙术名称</th>
+  <th>仙术说明</th>
+  <th>效果说明</th>
+  <th>指令类型</th>
+  <th>目标</th>
+  <th>五灵属性</th>
+  <th>附加技能ID</th>
+  <th>耗神数值</th>
+  <th>攻击动作类型</th>
+</tr>
+{% for magic in object_list %}
+<tr style="color: {{ magic.color }}; background-color: {{ magic.bgcolor }}">
+  <td>{{ magic.id }}</td>
+  <td>{{ magic.name }}</td>
+  <td>{{ magic.description }}</td>
+  <td>{{ magic.prop }}</td>
+  <td>{{ magic.ai_cmd_name }}</td>
+  <td>{{ magic.target_name }}</td>
+  <td>{{ magic.wl_name }}</td>
+  <td>{{ magic.attached_skill }}</td>
+  <td>{{ magic.consumed_mp }}</td>
+  <td>{{ magic.act_name }}</td>
+</tr>
+{% endfor %}
+</table>
+    
+
+

@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<meta charset='utf-8'>
+<link rel="stylesheet" type="text/css" href="{% static 'pal4/style.css' %}" />
+<table border cellspacing=1 cellpadding=3>
+<caption>抗性及反弹百分比</caption>
+<tr>
+  <th>敌人ID</th>
+  <th>敌人名称</th>
+  <th>物理伤害吸收百分比</th>
+  <th>水属性伤害吸收百分比</th>
+  <th>火属性伤害吸收百分比</th>
+  <th>雷属性伤害吸收百分比</th>
+  <th>风属性伤害吸收百分比</th>
+  <th>土属性伤害吸收百分比</th>
+  <th>物理伤害反弹百分比</th>
+  <th>水属性伤害反弹百分比</th>
+  <th>火属性伤害反弹百分比</th>
+  <th>雷属性伤害反弹百分比</th>
+  <th>风属性伤害反弹百分比</th>
+  <th>土属性伤害反弹百分比</th>
+</tr>
+{% for monster in object_list %}
+<tr>
+  <td>{{ monster.monster_id }}</td>
+  <td>{{ monster.ma_name }}</td>
+  <td>{{ monster.ca_attack_physical_extract_p }}</td>
+  <td>{{ monster.ca_attack_water_extract_p }}</td>
+  <td>{{ monster.ca_attack_fire_extract_p }}</td>
+  <td>{{ monster.ca_attack_thunder_extract_p }}</td>
+  <td>{{ monster.ca_attack_air_extract_p }}</td>
+  <td>{{ monster.ca_attack_earth_extract_p }}</td>
+  <td>{{ monster.ca_attack_physical_react_p }}</td>
+  <td>{{ monster.ca_attack_water_react_p }}</td>
+  <td>{{ monster.ca_attack_fire_react_p }}</td>
+  <td>{{ monster.ca_attack_thunder_react_p }}</td>
+  <td>{{ monster.ca_attack_air_react_p }}</td>
+  <td>{{ monster.ca_attack_earth_react_p }}</td>
+</tr>
+{% endfor %}
+</table>
+    
+
+

@@ -1,0 +1,26 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'stock/style.css' %}" />
+<meta charset="UTF-8">
+<head><title>敌人信息分类查询</title>
+</head>
+<h3 align=center>敌人信息分类查询</h3>
+<body>
+综述：包括全部BOSS在内的全部敌人均包括在内<br /><br />
+<ul>
+	<li><a href="{% url 'pal4:monster_sum' %}">汇总查询</a></li>
+</ul>
+<p>-----------------------------------</p>
+分类详情查询类
+<ul>
+    <!--<li><a href="{% url 'pal4:monster_detail' 'basic1' %}">基本属性一</a></li>
+    <li><a href="{% url 'pal4:monster_detail' 'basic2' %}">基本属性二</a></li>
+    <li><a href="{% url 'pal4:monster_detail' 'fp' %}">五属性</a></li>
+    <li><a href="{% url 'pal4:monster_detail' 'wuling' %}">五灵</a></li>
+    <li><a href="{% url 'pal4:monster_detail' 'resist' %}">抗性</a></li>
+    <li><a href="{% url 'pal4:monster_detail' 'extra_p' %}">额外属性追加</a></li>
+    <li><a href="{% url 'pal4:monster_detail' 'rebound' %}">反弹</a></li>
+    <li><a href="{% url 'pal4:monster_detail' 'skill' %}">技能</a></li>
+    <li><a href="{% url 'pal4:monster_detail' 'stolen_drop' %}">掉落及偷窃</a></li>-->
+</ul>
+</body>

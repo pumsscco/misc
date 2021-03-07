@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<meta charset='utf-8'>
+<link rel="stylesheet" type="text/css" href="{% static 'pal4/style.css' %}" />
+<table border cellspacing=1 cellpadding=3>
+<caption>敌人属性汇总表</caption>
+<tr>
+  <th>敌人ID</th>
+  <th>敌人名称</th>
+  <th>种族</th>
+  <th>等级</th>
+  <th>经验</th>
+  <th>精</th>
+  <th>五灵属性</th>
+  <th>特殊属性</th>
+  <th>技能</th>
+  <th>可偷物品</th>
+  <th>可偷金钱</th>
+  <th>可能掉落物品</th>
+  <th>掉落金钱</th>
+</tr>
+{% for monster in object_list %}
+<tr>
+  <td>{{ monster.monster_id }}</td>
+  <td>{{ monster.ma_name }}</td>
+  <td>{{ monster.racename }}</td>
+  <td>{{ monster.ca_level }}</td>
+  <td>{{ monster.ca_experience }}</td>
+  <td>{{ monster.ca_max_hp }}</td>
+  <td>{{ monster.wuling }}</td>
+  <td>{{ monster.spe_p }}</td>
+  <td>{{ monster.skills }}</td>
+  <td>{{ monster.losable_prop_name }}</td>
+  <td>{{ monster.ca_losable_money }}</td>
+  <td>{{ monster.drop_prop }}</td>
+  <td>{{ monster.drop_money }}</td>
+</tr>
+{% endfor %}
+</table>
+    
+
+

@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<meta charset='utf-8'>
+
+{% if object_list %}
+	<table border cellspacing=1 cellpadding=3>
+	  <caption>符合条件的交易记录列表</caption>
+	  <tr>
+	    <th>成交日期</th>
+	    <th>股票代码</th>
+	    <th>股票名称</th>
+	    <th>操作类型</th>
+	    <th>成交数量</th>
+	    <th>成交均价</th>
+	    <th>成交金额</th>
+	    <th>发生金额</th>
+	    <th>佣金</th>
+	    <th>印花税</th>
+	    <th>过户费</th>
+	  </tr>
+	{% for deal in object_list %}
+	  <tr>
+	    <td>{{ deal.deal_date }}</td>
+	    <td>{{ deal.stock_code }}</td>
+	    <td>{{ deal.stock_name }}</td>
+	    <td>{{ deal.operation }}</td>
+	    <td>{{ deal.volume }}</td>
+	    <td>{{ deal.avg_price }}</td>
+	    <td>{{ deal.turnover }}</td>
+	    <td>{{ deal.amount }}</td>
+	    <td>{{ deal.brokerage }}</td>
+	    <td>{{ deal.stamp_tax }}</td>
+	    <td>{{ deal.transfer_fee }}</td>
+	  </tr>
+	{% endfor %}
+	</table>
+{% else %}
+    <p>没有符合条件的交易记录</p>
+{% endif %}

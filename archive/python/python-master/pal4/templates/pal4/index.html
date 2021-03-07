@@ -1,0 +1,37 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'stock/style.css' %}" />
+<meta charset="UTF-8">
+<head><title>仙剑四数据汇总查询</title>
+</head>
+<h3 align=center>仙剑四数据汇总查询</h3>
+<h5>内容包括物品购买，掉落，偷窃信息，场景物品信息查询，主支线列表，敌人信息表等</h5>
+<body>
+物品购买信息
+<ul>
+    <li><a href="{% url 'pal4:buy_equip_index' %}">装备购买</a></li>
+</ul>
+<p>--------------------</p>
+<ul>
+    <li><a href="{% url 'pal4:buy_property_index' %}">道具购买</a></li>
+</ul>
+<p>--------------------</p>
+<ul>
+    <li><a href="{% url 'pal4:buy_prescription_index' %}">配方购买</a></li>
+</ul>
+<p>-----------------------------------</p>
+怪物信息
+<ul>
+    <li><a href="{% url 'pal4:monster_index' %}">怪物信息首页</a></li>
+</ul>
+<p>-----------------------------------</p>
+任务信息
+<ul>
+    <li><a href="{% url 'pal4:mission' %}">任务全记录</a></li>
+</ul>
+五灵仙术
+<ul>
+    <li><a href="{% url 'pal4:magic' %}">五灵仙术全表</a></li>
+</ul>
+<p>-----------------------------------</p>
+</body>

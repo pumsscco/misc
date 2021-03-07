@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<meta charset='utf-8'>
+<link rel="stylesheet" type="text/css" href="{% static 'pal4/style.css' %}" />
+<table border cellspacing=1 cellpadding=3>
+<caption>敌人基本属性</caption>
+<tr>
+  <th>敌人ID</th>
+  <th>敌人名称</th>
+  <th>二维图标</th>
+  <th>三维模型编号</th>
+  <th>怪物信息描述</th>
+  <th>种族</th>
+  <th>是否为Boss</th>
+  <th>精最大值</th>
+  <th>气增加量</th>
+  <th>神最大值</th>
+  <th>经验</th>
+  <th>等级</th>
+  <th>一般攻击目标</th>
+  <th>一般攻击方式</th>
+  <th>气目前值</th>
+  <th>存盘统计</th>
+</tr>
+{% for monster in object_list %}
+<tr>
+  <td>{{ monster.monster_id }}</td>
+  <td>{{ monster.ma_name }}</td>
+  <td>{{ monster.ma_icon }}</td>
+  <td>{{ monster.ma_model }}</td>
+  <td>{{ monster.ma_desc }}</td>
+  <td>{{ monster.racename }}</td>
+  <td>{{ monster.is_boss_cn }}</td>
+  <td>{{ monster.ca_max_hp }}</td>
+  <td>{{ monster.ca_additional_rage }}</td>
+  <td>{{ monster.ca_max_mp }}</td>
+  <td>{{ monster.ca_experience }}</td>
+  <td>{{ monster.ca_level }}</td>
+  <td>{{ monster.phy_atk_tgt }}</td>
+  <td>{{ monster.phy_atk_range }}</td>
+  <td>{{ monster.ca_rage }}</td>
+  <td>{{ monster.is_count }}</td>
+</tr>
+{% endfor %}
+</table>
+    
+
+

@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<meta charset='utf-8'>
+<link rel="stylesheet" type="text/css" href="{% static 'pal4/style.css' %}" />
+<table border cellspacing=1 cellpadding=3>
+<caption>剑基本属性及购买表</caption>
+<tr>
+  <th>ID</th>
+  <th>名称</th>
+  <th>适用角色</th>
+  <th>要求等级</th>
+  <th>价格</th>
+  <th>属性</th>
+  <th>可购买场景</th>
+</tr>
+{% for sword in object_list %}
+<tr>
+  <td>{{ sword.id }}</td>
+  <td>{{ sword.name }}</td>
+  <td>{{ sword.role_can_use }}</td>
+  <td>{{ sword.require_lv_lmt }}</td>
+  <td>{{ sword.price }}</td>
+  <td>{{ sword.attribute }}</td>
+  <td>{{ sword.shopscene }}</td>
+</tr>
+{% endfor %}
+</table>
+    
+
+
